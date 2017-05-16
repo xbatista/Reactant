@@ -6,6 +6,7 @@
 //  Copyright © 2016 Brightify. All rights reserved.
 //
 
+#if os(iOS)
 import RxSwift
 import RxDataSources
 
@@ -92,3 +93,4 @@ open class SimulatedSeparatorTableView<CELL: UIView>: TableViewBase<CELL.StateTy
         return footer
     }
 }
+#endif
